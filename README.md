@@ -25,5 +25,5 @@ dotnet run
 4. Open up a browser and navigate to https://localhost:5001/
 
 ## Screenshots
-![](p1.jpg)
-![](p2.jpg)
+![](https://github.com/RKleinschmidt/coreAppSMS/blob/master/p1.JPG)
+![](https://github.com/RKleinschmidt/coreAppSMS/blob/master/p2.JPG)
