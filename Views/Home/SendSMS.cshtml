@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Send a new SMS";
+}
+<h1>@ViewData["Title"]</h1>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+            <label for="comment">Comment:</label>
+            <span id="charcount" class="badge badge-light float-right">160</span>
+            <textarea onkeyup="textChanged()" class="form-control" rows="5" id="txtComment"></textarea>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+<div class="col-md-12">
+    I have hardcoded my cell number for the recipient
+    <button id="btnSend" type="button" onclick="btnSend()" class="btn btn-success float-right" >Send</button>
+    </div>
+</div>

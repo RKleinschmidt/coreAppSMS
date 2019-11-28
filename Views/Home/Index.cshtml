@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">SMS Logs</h1>
+    <p>This is a list of SMS messages sent.</p>
+
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="table-responsive">
+      <div class="col-12">
+        <table class="table-striped table-responsive">
+          <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Message</th>
+            <th>Number</th>
+          </tr>
+        @foreach(var objMSG in Model)
+        {
+          <tr>
+              <td>@objMSG.id.ToString()</td>
+              <td>@objMSG.date.ToString()</td>
+              <td>@objMSG.message</td>
+              <td>@objMSG.number.ToString()</td>
+          </tr>
+        }
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
